@@ -28,7 +28,7 @@ function Header({ lang, setLang }) {
   const goTo = (path) => { navigate(path); setMenuOpen(false) }
 
   return (
-    <header style={{ background: '#1a1714', borderBottom: '1px solid #2a2520', position: 'sticky', top: 0, zIndex: 100 }}>
+   <header style={{ background: '#1a1714', borderBottom: '1px solid #2a2520', position: 'sticky', top: 0, zIndex: 100 }}>
       <div style={{ maxWidth: 960, margin: '0 auto', padding: '12px 20px', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: 12, cursor: 'pointer' }} onClick={() => goTo('/')}>
           <div style={{ width: 36, height: 36, borderRadius: '50%', background: '#8B7355', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 18, color: '#fff' }}>★</div>
@@ -47,7 +47,7 @@ function Header({ lang, setLang }) {
           ))}
         </nav>
       )}
-    </header>
+    </header>  
   )
 }
 
